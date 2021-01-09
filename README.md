@@ -1,11 +1,10 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# E-Commerce Payment Fraud Detection
 
-# Your Project Title Here
+The world is getting more digitalized, and so do payments. Fraud in commerce is called "payment fraud" and is defined as any type of illegal or false transaction. The profit can be money, goods or even sensitive information. Since COVID-19 e-payment transactions has risen. According to the [Sift insights](https://blog.sift.com/2020/where-does-fraud-go-from-here-how-coronavirus/), the education space, travel and transportation are the most hot targets in this year. 
 
-*TODO:* Write a short introduction to your project.
-
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+<p align="center">
+  <img src="https://blog.sift.com/wp-content/uploads/2020/07/COVID-graphic-768x362.png">
+</p>
 
 ## Dataset
 
