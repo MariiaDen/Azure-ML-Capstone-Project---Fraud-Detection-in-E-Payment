@@ -20,6 +20,15 @@ The data is very unbalanced, as any dataset with fraud occurences. Data used in 
 ### Task
 Though it will be impossible to say which features play the biggest role in payment fraud detection since data is highly anonymized, but it still will be interesting to see which methods work the best, and whether there are some more distinctive features that determine the outcome. These learnings can be then used for the less anonymized data, when it gets accessible. 
 
+The project is split into multiple steps: 
+
+<p align="center">
+  <img src="capstone-diagram.png">
+</p>
+
+We will be training model using Automated ML and HyperDrive. The results will be compared and the best model deployed. 
+At the final step we will test the model endpoint. 
+
 ### Access
 Since this is a kaggle dataset, the data has been downloaded as a csv file and uploaded to the ML Azure environment. 
 
