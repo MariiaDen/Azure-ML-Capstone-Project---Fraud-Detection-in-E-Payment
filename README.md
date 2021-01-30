@@ -31,6 +31,21 @@ At the final step we will test the model endpoint.
 
 ### Access
 Since this is a kaggle dataset, the data has been downloaded as a csv file and uploaded to the ML Azure environment. 
+The csv file has then been uploaded to the Azure ML to the blob storage: 
+
+<p align="center">
+  <img src="dataset/creditcard.PNG">
+</p>
+
+<p align="center">
+  <img src="dataset/creditcard-2.PNG">
+</p>
+
+By choosing the dataset and navigating to the Consume tab, you can see the usage details, which can be copied later on to the Python Script:
+
+<p align="center">
+  <img src="dataset/dataset-usage.PNG">
+</p>
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
