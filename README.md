@@ -23,7 +23,7 @@ Though it will be impossible to say which features play the biggest role in paym
 The project is split into multiple steps: 
 
 <p align="center">
-  <img src="capstone-diagram.png">
+  <img src="capstone-diagram.png" height="300">
 </p>
 
 We will be training model using Automated ML and HyperDrive. The results will be compared and the best model deployed. 
@@ -34,21 +34,54 @@ Since this is a kaggle dataset, the data has been downloaded as a csv file and u
 The csv file has then been uploaded to the Azure ML to the blob storage: 
 
 <p align="center">
-  <img src="dataset/creditcard.PNG">
+  <img src="dataset/creditcard.PNG" height="250">
 </p>
 
 <p align="center">
-  <img src="dataset/creditcard-2.PNG">
+  <img src="dataset/creditcard-2.PNG" height="250">
 </p>
 
 By choosing the dataset and navigating to the Consume tab, you can see the usage details, which can be copied later on to the Python Script:
 
 <p align="center">
-  <img src="dataset/dataset-usage.PNG">
+  <img src="dataset/dataset-usage.PNG" height="250">
 </p>
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+To train our model with AutoML, we need to create an experiment first. Let's name it 'lab3-experiment'
+
+<p align="center">
+  <img src="automl/create_experiment.PNG" height="200">
+</p>
+
+Now we can read our dataset, and create a new compute cluster. Microsoft offers different virtual machines. We will select 'STANDARD_D2_V2' version. 
+
+<p align="center">
+  <img src="automl/cluster_creation.PNG" height="250">
+</p>
+
+If we refer to the official Microsoft documentation, we will see:
+*"D-series VMs are designed to run applications that demand higher compute power and temporary disk performance. D-series VMs provide faster processors, a higher memory-to-core ratio, and a solid-state drive (SSD) for the temporary disk. Dv3-series, Dv2-series, a follow-on to the original D-series, features a more powerful CPU. The Dv2-series CPU is about 35% faster than the D-series CPU."*
+
+Since training a model requires a high compute power, this option matches our needs well. 
+
+When configuring AutoML, at a minimum we need to define: 
+
+- The task - values can be 'classification', 'regression', or 'forecasting'. In our case it's classification, since we want to distinguish between normal payments and payment fraud
+- The primary metric - in our case it's accuracy, since it defines how well our model performs
+- Training data - for this use case we use the creditcard data we have previously uploaded
+- Label column name - the column that contains our classification result. In creditcard dataset this column is called "Class"
+- Compute target - a machine to run our task. We will use the one we have created previously. 
+
+Additionally, we have defined the experiment timeout, which is 30 minutes. This way we define how long, in minutes, our experiment should continue to run.
+To perform a cross-validation, we needed to define the number, which is set to 5 as in most of the Microsoft examples. As a result, metrics are calculated with the average of the five validation metrics. 
+
+Finally, we've submitted our experiment. 
+
+<p align="center">
+  <img src="automl/automl_config.PNG" height="250">
+</p>
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
