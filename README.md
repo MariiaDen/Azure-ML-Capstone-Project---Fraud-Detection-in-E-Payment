@@ -82,11 +82,48 @@ Finally, we've submitted our experiment.
   <img src="automl/automl_config.PNG" height="250">
 </p>
 
+When navigating to the experiment, it can be seen that the training is running
+
+<p align="center">
+  <img src="automl/training-child-models.PNG" height="250">
+</p>
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+The experiment is completed
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+<p align="center">
+  <img src="automl/automl-completed-2.PNG" height="250">
+</p>
+
+Upon the completion of the experiment, in the run details we can see how our models have perfomed, and which one has scored the best accuracy. As we can see, VotingEnsemble has slightly outperformed StackEnsemble model.
+
+<p align="center">
+  <img src="automl/run-details-4.PNG" height="350">
+</p>
+
+This accuracy can also be seen on the graphic. It seems that most of the methods perfomed almost equally well. 
+
+<p align="center">
+  <img src="automl/run-details-accuracy.PNG" height="300">
+</p>
+
+Does this mean we have an ideal training model? Unfortunately, not. Though AutoML has worked on balancing our dataset, we must remember that from the very start it was highly imbalanced, which means we are lacking on the fraud examples. Therefore, any analysis will bring the high accuracy for this type of the dataset. At the same time, our experiment was not in vain, since if we check for parameters, we will see that the definitely meaningful features are V4 and V14.
+
+<p align="center">
+  <img src="automl/voting-ensemble-features.PNG" height="250">
+</p>
+
+This means, that there are important features, which can help to define a fraudful payment. 
+By using the values from the confusion matrix, we can determine the true positive and true negative rates. 
+
+<p align="center">
+  <img src="automl/confusion-matrix.PNG" height="250">
+</p>
+
+After a quick math, we can say that: 
+
+- The non-fraudulent transactions are recognized in 99.991558% of cases
+- The fraudulent transactions are recognized in 78.658536% of cases, which is still a good result.
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
