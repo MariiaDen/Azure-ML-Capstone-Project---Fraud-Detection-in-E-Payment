@@ -183,7 +183,7 @@ The following graphic gives a better overview of the performance of different ru
 We can now print the best model id: 
 
 <p align="center">
-  <img src="hyperdrive/best_model.PNG" height="250">
+  <img src="hyperdrive/best_model.PNG" height="150">
 </p>
 
 ## Model Deployment
