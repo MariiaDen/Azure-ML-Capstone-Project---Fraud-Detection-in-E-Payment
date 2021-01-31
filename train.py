@@ -11,6 +11,12 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 # from azureml.core import Dataset
 from azureml.core import Workspace, Datastore
 
+# TODO: Create TabularDataset using TabularDatasetFactory
+# ds = Dataset.Tabular.from_delimited_files(path = [(datastore, ('./prepared.csv'))])
+
+# datastore_path = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
+# ds = TabularDatasetFactory.from_delimited_files(path=datastore_path)
+
 run = Run.get_context()
 workspace = run.experiment.workspace
 
