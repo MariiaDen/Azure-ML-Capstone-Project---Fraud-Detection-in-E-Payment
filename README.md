@@ -1,4 +1,4 @@
-<--! https://drive.google.com/file/d/1kYWbQPcjMp4z8cTCW0_ShrDLZsaOIy2u/view?usp=sharing -->
+<!-- https://drive.google.com/file/d/1kYWbQPcjMp4z8cTCW0_ShrDLZsaOIy2u/view?usp=sharing -->
 # E-Commerce Payment Fraud Detection
 
 The world is getting more digitalized, and so do payments. Fraud in commerce is called "payment fraud" and is defined as any type of illegal or false transaction. The profit can be money, goods or even sensitive information. Since COVID-19 e-payment transactions amount has risen. According to the [Sift insights](https://blog.sift.com/2020/where-does-fraud-go-from-here-how-coronavirus/), the education space, travel and transportation are the most hot targets in this year. 
