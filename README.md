@@ -126,13 +126,59 @@ After a quick math, we can say that:
 - The fraudulent transactions are recognized in 78.658536% of cases, which is still a good result.
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+First of all, we need to clean our data - by turning it from inbalanced to the balanced one. To do so, we have selected all fraudulent entries (which are 492 in total), and randomly selected 492 non-fraudulent ones. Out of these entries we have built a single dataset
+
+<p align="center">
+  <img src="hyperdrive/dataset_1.PNG" height="250">
+</p>
+
+As can be seen on the following generated image, the dataset is now balanced:
+
+<p align="center">
+  <img src="hyperdrive/dataset_2.PNG" height="250">
+</p>
+
+The results can now be stored in a csv file, which we call "prepared.csv".
+
+<p align="center">
+  <img src="hyperdrive/dataset_3.PNG" height="250">
+</p>
+
+Since our data is now balanced, for the Hyper Drive model we've used LogisticRegression with two configurazitation parameters:
+
+- Regularization strength, which lies between 0.001 and 1. The lower the value is, the bigger is the impact.
+- Maximal number of iterations, which lies between 30 and 250. 
+
+These parameters are selected randomly, with the help of RandomParameterSampling.
+For the termination policy the BanditPolicy was used. 
+
+Starting our Hyper Drive, we can see the details with RunDetails widget:
+
+<p align="center">
+  <img src="hyperdrive/hypervisor_run.PNG" height="300">
+</p>
 
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+Our experiment is now finished, and we can see that the best two runs have reached the same result, which is around 94.77% of accuracy. 
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+<p align="center">
+  <img src="hyperdrive/completed_1.PNG" height="250">
+</p>
+
+The following graphic gives a better overview of the performance of different runs:
+
+<p align="center">
+  <img src="hyperdrive/completed_2.PNG" height="250">
+</p>
+
+<p align="center">
+  <img src="hyperdrive/completed_3.PNG" height="250">
+</p>
+
+<p align="center">
+  <img src="hyperdrive/completed_4.PNG" height="250">
+</p>
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
@@ -142,6 +188,3 @@ After a quick math, we can say that:
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
-
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
