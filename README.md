@@ -180,6 +180,12 @@ The following graphic gives a better overview of the performance of different ru
   <img src="hyperdrive/completed_4.PNG" height="250">
 </p>
 
+We can now print the best model id: 
+
+<p align="center">
+  <img src="hyperdrive/best_model.PNG" height="250">
+</p>
+
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
