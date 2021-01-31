@@ -9,25 +9,21 @@ import pandas as pd
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
 # from azureml.core import Dataset
-from azureml.core import Workspace
-
-subscription_id = 'f5091c60-1c3c-430f-8d81-d802f6bf2414'
-resource_group = 'aml-quickstarts-136663'
-workspace_name = 'quick-starts-ws-136663'
-
-workspace = Workspace(subscription_id, resource_group, workspace_name)
+from azureml.core import Workspace, Datastore
 
 # TODO: Create TabularDataset using TabularDatasetFactory
 # ds = Dataset.Tabular.from_delimited_files(path = [(datastore, ('./prepared.csv'))])
-
-# get the datastore to upload prepared data
-datastore = workspace.get_default_datastore()
-ds = TabularDatasetFactory.from_delimited_files(path = [(datastore, ('./prepared.csv'))])
 
 # datastore_path = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 # ds = TabularDatasetFactory.from_delimited_files(path=datastore_path)
 
 run = Run.get_context()
+workspace = run.experiment.workspace
+
+# get the datastore to upload prepared data
+datastore_name = "workspaceblobstore"
+datastore = Datastore.get(workspace, datastore_name)
+ds = TabularDatasetFactory.from_delimited_files(path = [(datastore, ('./prepared.csv'))])
 
 
 def main():
