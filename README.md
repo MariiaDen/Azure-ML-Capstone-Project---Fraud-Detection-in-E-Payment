@@ -67,14 +67,14 @@ Since training a model requires a high compute power, this option matches our ne
 
 When configuring AutoML, at a minimum we need to define: 
 
-- The task - values can be 'classification', 'regression', or 'forecasting'. In our case it's classification, since we want to distinguish between normal payments and payment fraud
-- The primary metric - in our case it's accuracy, since it defines how well our model performs
-- Training data - for this use case we use the creditcard data we have previously uploaded
-- Label column name - the column that contains our classification result. In creditcard dataset this column is called "Class"
-- Compute target - a machine to run our task. We will use the one we have created previously. 
+- The task **(task)** - values can be 'classification', 'regression', or 'forecasting'. In our case it's classification, since we want to distinguish between normal payments and payment fraud
+- The primary metric **(primary_metric)** - in our case it's accuracy, since it defines how well our model performs
+- Training data **(training_data)** - for this use case we use the creditcard data we have previously uploaded
+- Label column name **(label_column_name)** - the column that contains our classification result. In creditcard dataset this column is called "Class"
+- Compute target **(compute_target)** - a machine to run our task. We will use the one we have created previously. 
 
-Additionally, we have defined the experiment timeout, which is 30 minutes. This way we define how long, in minutes, our experiment should continue to run.
-To perform a cross-validation, we needed to define the number, which is set to 5 as in most of the Microsoft examples. As a result, metrics are calculated with the average of the five validation metrics. 
+Additionally, we have defined the experiment timeout **(experiment_timeout_minutes)**, which is 30 minutes. This way we define how long, in minutes, our experiment should continue to run.
+To perform a cross-validation **(n_cross_validations)**, we needed to define the number, which is set to 5 as in most of the Microsoft examples. As a result, metrics are calculated with the average of the five validation metrics. 
 
 Finally, we've submitted our experiment. 
 
