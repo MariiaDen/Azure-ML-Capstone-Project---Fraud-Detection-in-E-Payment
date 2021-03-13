@@ -9,7 +9,7 @@ from sklearn.externals import joblib
 
 def init():
     global model
-    model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), 'model.pkl')
+    model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), 'best_model.pkl')
     model = joblib.load(model_path)
 
 def run(data):
