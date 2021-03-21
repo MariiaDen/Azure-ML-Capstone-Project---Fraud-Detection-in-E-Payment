@@ -1,4 +1,4 @@
-https://drive.google.com/file/d/1kYWbQPcjMp4z8cTCW0_ShrDLZsaOIy2u/view?usp=sharing <!-- -->
+<!-- https://drive.google.com/file/d/1kYWbQPcjMp4z8cTCW0_ShrDLZsaOIy2u/view?usp=sharing -->
 # E-Commerce Payment Fraud Detection
 
 ##### Table of Contents  
@@ -6,6 +6,8 @@ https://drive.google.com/file/d/1kYWbQPcjMp4z8cTCW0_ShrDLZsaOIy2u/view?usp=shari
 [Dataset](#dataset)  
 [Automated ML](#automl)  
 [Hyperparameter Tuning](#hyper)  
+[Model Deployment](#deploy)   
+[Screen Recording](#recording) 
 
 <a name="motivation"/>  
 
@@ -201,8 +203,12 @@ We can now print the best model id:
   <img src="hyperdrive/best_model.PNG" height="150">
 </p>
 
+<a name="deploy"/>  
+
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
+<a name="recording"/>  
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
