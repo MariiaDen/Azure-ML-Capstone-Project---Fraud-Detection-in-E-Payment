@@ -4,10 +4,10 @@ https://drive.google.com/file/d/1kYWbQPcjMp4z8cTCW0_ShrDLZsaOIy2u/view?usp=shari
 ##### Table of Contents  
 [Motivation](#motivation)  
 [Dataset](#dataset)  
-[Automated ML](#automl)
-[Hyperparameter Tuning](#hyper)
+[Automated ML](#automl)  
+[Hyperparameter Tuning](#hyper)  
 
-<a name="motivation"/>
+<a name="motivation"/>  
 ## Motivation
 The world is getting more digitalized, and so do payments. Fraud in commerce is called "payment fraud" and is defined as any type of illegal or false transaction. The profit can be money, goods or even sensitive information. Since COVID-19 e-payment transactions amount has risen. According to the [Sift insights](https://blog.sift.com/2020/where-does-fraud-go-from-here-how-coronavirus/), the education space, travel and transportation are the most hot targets in this year. 
 
@@ -17,7 +17,7 @@ The world is getting more digitalized, and so do payments. Fraud in commerce is 
 
 There are several tools on the market that are used to detect payment frauds, and all of them use artificial intelligence to do so. In this project there is an attempt to analyze a dataset and determine how well can fraudulent actions be recognized. 
 
-<a name="dataset"/>
+<a name="dataset"/>  
 ## Dataset
 When it comes to financial information, it is almost impossible to get data to perform research. After searching for information online, one dataset has been found. 
 
@@ -56,7 +56,7 @@ By choosing the dataset and navigating to the Consume tab, you can see the usage
   <img src="dataset/dataset-usage.PNG" height="250">
 </p>
 
-<a name="automl"/>
+<a name="automl"/>  
 ## Automated ML
 To train our model with AutoML, we need to create an experiment first. Let's name it 'lab3-experiment'
 
@@ -135,7 +135,7 @@ After a quick math, we can say that:
 - The non-fraudulent transactions are recognized in 99.991558% of cases
 - The fraudulent transactions are recognized in 78.658536% of cases, which is still a good result.
 
-<a name="hyper"/>
+<a name="hyper"/>  
 ## Hyperparameter Tuning
 First of all, we need to clean our data - by turning it from inbalanced to the balanced one. To do so, we have selected all fraudulent entries (which are 492 in total), and randomly selected 492 non-fraudulent ones. Out of these entries we have built a single dataset
 
