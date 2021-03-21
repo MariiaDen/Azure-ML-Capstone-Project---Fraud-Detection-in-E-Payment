@@ -222,19 +222,19 @@ score.py contains two methods: init() and run(data). These help to initialize th
 The service was named as "payment-fraud-detection". The AciWebservice Class represents a machine learning model deployed as a web service endpoint on Azure Container Instances.
 
 <p align="center">
-  <img src="deployment/deployment.PNG" height="150">
+  <img src="deployment/deployment.PNG">
 </p>
 
 After waiting for several minutes, the deployment has succeeded. 
 
 <p align="center">
-  <img src="deployment/fraud_detection_1.PNG" height="150">
+  <img src="deployment/fraud_detection_1.PNG">
 </p>
 <p align="center">
-  <img src="deployment/fraud_detection_2.PNG" height="150">
+  <img src="deployment/fraud_detection_2.PNG">
 </p>
 <p align="center">
-  <img src="deployment/fraud_detection_3.PNG" height="150">
+  <img src="deployment/fraud_detection_3.PNG">
 </p>
 
 <a name="recording"/>  
