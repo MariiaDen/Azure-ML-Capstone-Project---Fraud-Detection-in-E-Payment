@@ -207,7 +207,35 @@ We can now print the best model id:
 <a name="deploy"/>  
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+Comparing all models, I decided to deploy the AutoML best model. 
+In order to deploy and to test it, the two additional scrips were required: 
+
+- score.py
+- endpoint.py
+
+score.py contains two methods: init() and run(data). These help to initialize the model, and define how to proceed with requests. The input and output samples define in which format the model has to expect the data, and provide response. 
+
+<p align="center">
+  <img src="deployment/samples.PNG" height="150">
+</p>
+
+The service was named as "payment-fraud-detection". The AciWebservice Class represents a machine learning model deployed as a web service endpoint on Azure Container Instances.
+
+<p align="center">
+  <img src="deployment/deployment.PNG" height="150">
+</p>
+
+After waiting for several minutes, the deployment has succeeded. 
+
+<p align="center">
+  <img src="deployment/fraud_detection_1.PNG" height="150">
+</p>
+<p align="center">
+  <img src="deployment/fraud_detection_2.PNG" height="150">
+</p>
+<p align="center">
+  <img src="deployment/fraud_detection_3.PNG" height="150">
+</p>
 
 <a name="recording"/>  
 
