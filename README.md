@@ -216,7 +216,7 @@ In order to deploy and to test it, the two additional scrips were required:
 score.py contains two methods: init() and run(data). These help to initialize the model, and define how to proceed with requests. The input and output samples define in which format the model has to expect the data, and provide response. 
 
 <p align="center">
-  <img src="deployment/samples.PNG" height="150">
+  <img src="deployment/samples.PNG">
 </p>
 
 The service was named as "payment-fraud-detection". The AciWebservice Class represents a machine learning model deployed as a web service endpoint on Azure Container Instances.
