@@ -7,7 +7,8 @@
 [Automated ML](#automl)  
 [Hyperparameter Tuning](#hyper)  
 [Model Deployment](#deploy)   
-[Screen Recording](#recording) 
+[Screen Recording](#recording)  
+[Future improvements](#future)    
 
 <a name="motivation"/>  
 
