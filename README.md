@@ -237,15 +237,21 @@ After waiting for several minutes, the deployment has succeeded.
   <img src="deployment/fraud_detection_3.PNG">
 </p>
 
+After trying out the endpoint.py with random data, the request turned out to be successful, and returned response (0, 0), which means that both requests are non-fraudulent. 
+
+<p align="center">
+  <img src="deployment/endpoint_run.PNG">
+</p>
+
 <a name="recording"/>  
 
 ## Screen Recording
 The whole project is summarized in the following short video (please click on the image below). 
 <!--- <div align="center">
-  <a href="https://drive.google.com/file/d/1XU4UQ5OgIuSlD06CzA4EFjF7Y8i11u6r/view?usp=sharing"><img src="https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="IMAGE ALT TEXT"></a>
+  <a href="https://drive.google.com/file/d/1xPzfLuen6wuJ_UZ6q4oFnv666XksRaY5/view?usp=sharing"><img src="https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="IMAGE ALT TEXT"></a>
 </div> -->
 <div align="center">
-  <a href="https://drive.google.com/file/d/1x7uK9_bhIr05p1fra4sQKDuwACZ-caPL/view?usp=sharing"><img src="https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="IMAGE ALT TEXT"></a>
+  <a href="https://drive.google.com/file/d/1xPzfLuen6wuJ_UZ6q4oFnv666XksRaY5/view?usp=sharing"><img src="https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="IMAGE ALT TEXT"></a>
 </div>
 
 <a name="future"/>  
