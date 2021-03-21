@@ -79,7 +79,7 @@ To perform a cross-validation **(n_cross_validations)**, we needed to define the
 Finally, we've submitted our experiment. 
 
 <p align="center">
-  <img src="automl/automl_config.PNG" height="250">
+  <img src="automl/automl_settings.PNG" height="250">
 </p>
 
 When navigating to the experiment, it can be seen that the training is running
