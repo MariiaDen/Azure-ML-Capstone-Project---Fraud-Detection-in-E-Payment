@@ -218,3 +218,8 @@ The whole project is summarized in the following short video (please click on th
 <div align="center">
   <a href="https://drive.google.com/file/d/1x7uK9_bhIr05p1fra4sQKDuwACZ-caPL/view?usp=sharing"><img src="https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="IMAGE ALT TEXT"></a>
 </div>
+
+<a name="future"/>  
+
+## Future improvements
+As can be seen from the data analysis, the dataset is highly imbalanced. Unfortunately, this is hard to change, since we do not have enough fraud examples. Therefore, it would be important on better understanding the data, and finding ways to collect more. 
