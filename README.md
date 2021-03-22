@@ -170,6 +170,10 @@ Since our data is now balanced, for the Hyper Drive model we've used LogisticReg
 These parameters are selected randomly, with the help of RandomParameterSampling.
 For the termination policy the BanditPolicy was used. 
 
+<p align="center">
+  <img src="hyperdrive/hyper_sampling.PNG">
+</p>
+
 Starting our Hyper Drive, we can see the details with RunDetails widget:
 
 <p align="center">
