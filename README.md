@@ -141,6 +141,11 @@ After a quick math, we can say that:
 - The non-fraudulent transactions are recognized in 99.991558% of cases
 - The fraudulent transactions are recognized in 78.658536% of cases, which is still a good result.
 
+The best model ID can be seen on the following screenshot:
+<p align="center">
+  <img src="automl/best_model.PNG">
+</p>
+
 <a name="hyper"/>  
 
 ## Hyperparameter Tuning
