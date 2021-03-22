@@ -216,7 +216,12 @@ We can now print the best model id:
 <a name="deploy"/>  
 
 ## Model Deployment
-Comparing all models, I decided to deploy the AutoML best model. 
+Comparing all models, I decided to deploy the AutoML best model. But before, the model has to be registered. For this, the following code was used:
+
+<p align="center">
+  <img src="deployment/model_register.PNG">
+</p>
+
 In order to deploy and to test it, the two additional scrips were required: 
 
 - score.py
