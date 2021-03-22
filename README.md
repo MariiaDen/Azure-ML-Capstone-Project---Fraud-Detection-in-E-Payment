@@ -143,7 +143,7 @@ After a quick math, we can say that:
 
 The best model ID can be seen on the following screenshot:
 <p align="center">
-  <img src="automl/best_model.PNG">
+  <img src="automl/best_model_id.PNG">
 </p>
 
 <a name="hyper"/>  
